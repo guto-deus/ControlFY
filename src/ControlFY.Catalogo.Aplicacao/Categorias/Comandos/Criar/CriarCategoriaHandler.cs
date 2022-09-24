@@ -23,7 +23,7 @@ namespace ControlFY.Catalogo.Aplicacao.Categorias.Comandos.Criar
         {
             var categoria = new Categoria(request.Nome);
             await _categoriaRepositorio.Cadastrar(categoria);
-
+            ////
             return _mapper.Map<CategoriaViewModel>(categoria);
         }
     }
